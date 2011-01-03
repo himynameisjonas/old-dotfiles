@@ -1,2 +1,19 @@
-export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
+# misc
+export PATH="~/bin:~/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+# homebrew
+export PATH="/usr/local/homebrew/bin:$PATH"
+
+# postgres
+export PATH="$PATH:/opt/local/lib/postgresql84/bin"
+
+# mongodb
+export PATH="$PATH:/usr/local/mongodb/bin"
+
+# rvm
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+# dont need?
+# export PATH="/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
+
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"

@@ -1,8 +1,4 @@
-export PATH=$PATH:/usr/local/mongodb/bin
-
-export PATH=$PATH:/opt/local/lib/postgresql84/bin
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
+# start solr
 function solr {
    cd ~/Sites/solr
    ./start.sh $1
