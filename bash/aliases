@@ -3,6 +3,7 @@ function s { cd ~/Sites/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
+alias hddbackup='rsync -r -a -t -vv --progress --partial -z /Volumes/hårddisken/_backup/ backupdreamhost:~/rsync/_backup/'
 
 # cd
 alias ..='cd ..'
@@ -24,6 +25,7 @@ alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
+alias gx='gitx'
 
 # rails
 alias sc='script/console'
@@ -31,3 +33,7 @@ alias ss='script/server'
 alias sg='script/generate'
 alias tlog='tail -f log/development.log'
 alias migrate='rake db:migrate db:test:clone'
+
+# crashplan
+alias crashplanload='sudo launchctl load /Library/LaunchDaemons/com.crashplan.engine.plist'
+alias crashplanunload='sudo launchctl unload /Library/LaunchDaemons/com.crashplan.engine.plist'
