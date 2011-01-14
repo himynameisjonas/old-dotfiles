@@ -3,3 +3,9 @@ function solr {
    cd ~/Sites/solr
    ./start.sh $1
 }
+
+#start mahout
+function mahout {
+   cd ~/Sites/jetty-6.1.25
+   ./bin/jetty.sh $1
+}
