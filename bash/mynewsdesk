@@ -2,6 +2,7 @@
 function solr {
    cd ~/Sites/solr
    ./start.sh $1
+   cd -
 }
 
 #start mahout
