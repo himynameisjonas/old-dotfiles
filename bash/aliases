@@ -7,6 +7,7 @@ alias hddbackup='rsync -r -a -t -vv --progress --partial -z /Volumes/hårddisken
 
 # cd
 alias ..='cd ..'
+alias n='cd ~/Sites/newsdesk'
 
 # ls
 alias ls="ls -F"
@@ -15,16 +16,17 @@ alias ll="ls -l"
 alias la='ls -A'
 
 # git
-alias gl='git pull'
-alias gp='git push'
+alias gp='git pull'
 alias gd='git diff'
 alias go='git checkout'
+alias gogo='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 alias gx='gitx'
 alias gpp='git pull; git push'
+alias unmerged='mate `git unmerged-files`'
 
 # rails
 alias sc='script/console'
@@ -32,7 +34,7 @@ alias ss='script/server'
 alias sg='script/generate'
 alias tlog='tail -f log/development.log'
 alias migrate='rake db:migrate db:test:clone'
-alias tr='touch tmp/restart.txt'
+alias tr='touch tmp/restart.txt && ECHO "restarted server"'
 
 # crashplan
 alias crashplanload='sudo launchctl load /Library/LaunchDaemons/com.crashplan.engine.plist'
