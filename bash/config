@@ -1,5 +1,5 @@
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 txtblk='\e[0;30m' # Black - Regular
@@ -36,7 +36,7 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
-export PS1="\w(\[$txtcyn\]\$(parse_git_branch)\[$txtrst\]) \$ "
+export PS1="\w\[$txtcyn\]\$(parse_git_branch)\[$txtrst\] \$ "
 export EDITOR="mate -w"
 
 export CLICOLOR=1
