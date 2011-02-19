@@ -39,3 +39,9 @@ alias tr='touch tmp/restart.txt && ECHO "restarted server"'
 # crashplan
 alias crashplanload='sudo launchctl load /Library/LaunchDaemons/com.crashplan.engine.plist'
 alias crashplanunload='sudo launchctl unload /Library/LaunchDaemons/com.crashplan.engine.plist'
+
+# ssh and add pubkey
+function sshkey {
+  ssh $1 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys" < ~/.ssh/id_?sa.pub
+  echo "sshkey done."
+}
