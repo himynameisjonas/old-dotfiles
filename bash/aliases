@@ -27,6 +27,7 @@ alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG
 alias gx='gitx'
 alias gpp='git pull; git push'
 alias unmerged='mate `git unmerged-files`'
+alias gph='git push heroku master'
 
 # rails
 alias sc='script/console'
