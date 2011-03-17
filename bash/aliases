@@ -4,6 +4,7 @@ function s { cd ~/Sites/$1; }
 # misc
 alias reload='. ~/.bash_profile'
 alias hddbackup='rsync -r -a -t -vv --progress --partial -z /Volumes/hårddisken/_backup/ backupdreamhost:~/rsync/_backup/'
+alias himynameisjonas='sudo'
 
 # cd
 alias ..='cd ..'
