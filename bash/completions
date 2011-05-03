@@ -6,3 +6,6 @@ complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+ruby ~/.bash/completion_scripts/site_aliases.rb > ~/.bash/completion_scripts/site_aliases
+source ~/.bash/completion_scripts/site_aliases
