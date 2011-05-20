@@ -1,12 +1,12 @@
 # start solr
 function solr {
-   cd ~/Sites/solr
+   cd ~/code/solr
    ./start.sh $1
    cd -
 }
 
 #start mahout
 function mahout {
-   cd ~/Sites/jetty-6.1.25
+   cd ~/code/jetty-6.1.25
    ./bin/jetty.sh $1
 }
