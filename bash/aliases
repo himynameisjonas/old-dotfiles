@@ -29,6 +29,7 @@ alias gx='gitx'
 alias gpp='git pull; git push'
 alias unmerged='mate `git unmerged-files`'
 alias gph='git push heroku master'
+alias gphs='git push staging'
 
 # rails
 alias sc='script/console'

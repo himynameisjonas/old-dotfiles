@@ -1,5 +1,5 @@
 # start solr
-function solr {
+function sol {
    cd ~/code/solr
    ./start.sh $1
    cd -
