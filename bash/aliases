@@ -5,7 +5,6 @@ function c { cd ~/code/$1; }
 alias reload='. ~/.bash_profile'
 alias hddbackup='rsync -r -a -t -vv --progress --partial -z /Volumes/hårddisken/_backup/ backupdreamhost:~/rsync/_backup/'
 alias himynameisjonas='sudo'
-alias r="/Users/jonas/.rvm/gems/ruby-1.8.7-p302@global/bin/ruco"
 
 # cd
 alias ..='cd ..'
