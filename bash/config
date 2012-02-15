@@ -37,7 +37,11 @@ bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
 export PS1="\w\[$txtcyn\]\$(parse_git_branch)\[$txtrst\] \$ "
-export EDITOR="mate -w"
+export EDITOR="subl -w -n"
 
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
+
+# eval "$(rbenv init -)"
+export PATH="./bin:$PATH"
+eval "$(rbenv init -)"
